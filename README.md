@@ -1,87 +1,132 @@
-# music-player-gui-java
-🎧 A Java Swing-based Music Sharing &amp; Audio Player application with login UI, music selection, WAV playback support, sharing list, and dynamic volume control. Features include file chooser, album art preview, sound visualizer, volume slider, and a clean modern interface. Built using Java Swing &amp; Java Sound API.
-🎵 Java Music Sharing & Audio Player
+🎵 Java Swing Music Player
 
-🎵 Java Music Sharing & Audio Player
+A desktop music player application built using Java Swing and Java Sound API.
+This project demonstrates GUI design, event handling, audio playback, and basic media-player features in a single Java file.
 
-A modern Java Swing-based Music Player + Sharing Platform that allows users to:
+✨ Features
 
-✔ Select music
-✔ Share music in a playlist
-✔ Play WAV audio files
-✔ Control volume
-✔ Pause playback
-✔ Enjoy a built-in animated visualizer
+🔐 Login Screen
 
-📌 How It Works
+Simple username validation
 
-Login Page: User enters a username and clicks "Login".
+🎶 WAV Audio Playback
 
-Home Page:
+Supports .wav files using javax.sound.sampled
 
-Click "Select Song" to choose a WAV file.
+▶️ ⏸ ⏭ ⏮ Playback Controls
 
-Click "Play" to start playing the song.
+Play, Pause, Next, Previous
 
-Use "Pause" to stop playback temporarily.
+📃 Playlist Management
 
-Adjust the volume using the slider.
+Add songs dynamically
 
-Click "Share" to add the song to the shared song list.
+View song list
+
+⏱ Real-Time Progress Tracking
+
+Running time & total duration
+
+Progress bar updates automatically
+
+🔊 Volume Control
+
+Adjustable volume slider
+
+Mute / Unmute option
+
+🔁 Repeat Mode
+
+Replay the current song
+
+❤️ Favorite Button
+
+Mark/unmark current song
+
+🎨 Attractive UI
+
+Album art placeholder
+
+Instrument-themed footer
+
+Emoji-based modern controls
+
+🖼️ UI Overview
+
+Login Page
+
+Username field
+
+Login button
+
+Home Page
+
+Playlist panel
+
+Song info & progress bar
+
+Album art section
+
+Playback controls
+
+Volume & repeat controls
+
+Instrument showcase panel
+
+🛠️ Technologies Used
+
+Java (JDK 8+)
+
+Java Swing – GUI
+
+Java Sound API – Audio playback
+
+AWT – Layout & colors
+
+📂 Project Structure
+music_player.java   # Complete application in a single file
+README.md           # Project documentation
+
+▶️ How to Run
+1️⃣ Prerequisites
+
+Java JDK 8 or later installed
+
+IDE (IntelliJ IDEA / Eclipse) or terminal
+
+2️⃣ Compile & Run
+javac music_player.java
+java music_player
 
 
-🚀 Features
-🔐 Login Page
+Or simply run the file from your IDE.
 
-Simple login screen
+🎵 Supported Audio Format
 
-User must enter a username to continue
+✅ WAV only
 
-🏠 Home Dashboard
+❌ MP3 / AAC / FLAC not supported (Java Sound API limitation)
 
-Beautiful GUI built using Java Swing
+⚠️ Notes & Limitations
 
-Album art preview
+Only WAV files are supported
 
-Animated visualizer
+Playlist is not saved after closing the app
 
-Volume slider
+Album art is a placeholder
 
-Shared songs list
+Repeat applies to the current track only
 
-🎶 Music Functionality
+🚀 Future Enhancements
 
-Select songs from system
+MP3 support (using external libraries)
 
-Share songs (added to the playlist list)
+Playlist save/load feature
 
-Play WAV audio using Java Sound API
+Seekable progress bar (drag to change time)
 
-Pause music
+Animated album art
 
-Smooth volume control (0–100%)
+Equalizer controls
 
-📜 Code Overview
-Key Files
-
-music_player.java – Main application
-
-Contains:
-
-Login page
-
-Home page
-
-Music player
-
-Volume controller
-
-WAV playback
-
-⚡ Notes
-
-The application only supports WAV audio files.
-
-Volume adjustment works only while a song is playing.
-
-The shared song list only persists during the runtime of the application (no database or file storage implemented).
+Dark mode UI
